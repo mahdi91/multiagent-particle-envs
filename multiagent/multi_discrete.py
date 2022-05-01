@@ -4,7 +4,9 @@
 import numpy as np
 
 import gym
-from gym.spaces import prng
+#from gym.spaces import prng
+np_random = np.random.RandomState()
+random_array = np_random.rand(self.num_discrete_space)
 
 class MultiDiscrete(gym.Space):
     """
